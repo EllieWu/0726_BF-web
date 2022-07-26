@@ -1,0 +1,299 @@
+@mixin w1200{
+    @media (max-width:1200px){
+        @content;
+    }
+}
+@mixin web992{
+    @media (max-width:992px){
+        @content;
+    }
+}
+// @mixin web992-2{
+//     @media (min-width:992px){
+//         @content;
+//     }
+// }
+@mixin pad768{
+    @media(max-width:768px){
+        @content;
+    }
+}
+@mixin mobile375{
+    @media(max-width: 375px){
+        @content;
+    }
+}
+// @mixin mobile391{
+//     @media(max-width: 391px){
+//         @content;
+//     }
+// }
+// @mixin m391{
+//     @media(min-width: 391px){
+//         @content;
+//     }
+// }
+
+// @mixin sign-rwd-1200{
+//     @media(min-width: 1200px){
+//         @content;
+//     }
+// }
+body{
+    // background-image: url("https://digitallearning.arizona.edu/sites/default/files/styles/uaqs_full_width_lg/public/RethinkingYourAssessments.jpg?itok=fYZ_ZKRP&timestamp=1599151705");
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // background-color: rgba(0, 0, 0, 0.4);
+    // background-position: center center;
+    // background-blend-mode: multiply;
+    // height: 100vh;
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+        .nav-img{
+            width: 180px;
+            // @include mobile391{
+            //     width: 114px;
+            // }
+        }
+        .link-c {
+            color:black !important;
+            font-weight: bold !important;
+        }
+        
+    }
+    .menu-logout{
+        @include w1200{
+            display: none;
+        }
+    }
+    .banner{
+        background-image: url("https://digitallearning.arizona.edu/sites/default/files/styles/uaqs_full_width_lg/public/RethinkingYourAssessments.jpg?itok=fYZ_ZKRP&timestamp=1599151705");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        }
+        @include web992{
+            background-image: url("https://cdni.iconscout.com/illustration/premium/thumb/ai-development-3454695-2918404.png");
+            background-color: #ccd1f6;
+
+        }
+        // .banner-img img{
+            // background-image: url("https://digitallearning.arizona.edu/sites/default/files/styles/uaqs_full_width_lg/public/RethinkingYourAssessments.jpg?itok=fYZ_ZKRP&timestamp=1599151705");
+        //     position: relative;
+        //     background-size: cover;
+        //     height: 100%;
+        //     background-attachment: fixed;
+        //     max-width: 100%;
+        //     overflow: hidden;
+        //     @include mobile391{
+        //         display: none;
+        //     }
+        // }
+    //     .ef {
+    //         --bRadius: 10px;
+    //         .div{
+                
+    //             position: relative;
+    //             text-align: center;
+    //             font-size: 24px;
+    //             // border: 2px solid rgb(179, 191, 231);
+    //             border-radius: var(--bRadius);
+    //             transition: all .3s;
+    //             &::before, &::after {
+    //                 content: "";
+    //                 position: absolute;
+    //                 top: -10px;
+    //                 left: -10px;
+    //                 right: -10px;
+    //                 bottom: -10px;
+    //                 border: 2px solid rgb(255, 255, 255);
+    //                 transition: all .5s;
+    //                 border-radius: var(--bRadius);
+    //                 animation: clippath 5s infinite linear;
+    //             }
+    //             &::after {
+    //                 animation: clippath 5s infinite -2.5s linear;
+    //             }
+    //             @keyframes clippath {
+    //                 0%, 100% { clip-path: inset(0 0 98% 0); }
+    //                 25% { clip-path: inset(0 98% 0 0); }
+    //                 50% { clip-path: inset(98% 0 0 0); }
+    //                 75% { clip-path: inset(0 0 0 98%); }
+    //             }
+        
+    //         }
+    //     }
+    // }
+    // .body-login-box{
+    //     display: flex;
+    //         @include w1200{
+    //         justify-content: center;
+    //     }
+    //      .body-login{
+    //         background-color:rgb(137 137 137 / 50%) ;
+    //         border-radius: 10px;
+    //         text-align: center;
+    //         padding: 28px 0;
+    //         width: 1200px;
+    //         margin-top: 134px;
+            
+    //         @include w1200{
+    //             width: 960px;
+    //             padding: 100px 0px;
+    //         } 
+    //         @include web992{
+    //             padding: 90px 0px;
+    //             width: 768px;
+    //             background-color:rgb(255 255 255 / 95%) ;
+    //         }
+    //         @include pad768{
+    //             width: 320px;  
+    //         }
+    //         @include mobile375{
+    //             width: 266px;
+    //         }
+    //         // @include mobile391{
+                
+    //         //     width: 200px;
+                
+    //         // }
+    //         p{
+    //             @include web992{
+    //                 font-size: 16px;
+    //             }
+    //             // @include pad768{
+    //             //     font-size: 12px;
+    //             // }
+    //         }
+    //         a{
+    //             @include web992{
+    //                 width: 177px;
+    //             }
+    //         }
+    //         ::placeholder {
+    //             // color: black;
+    //             color:white;
+    //             font-weight: bold;
+    //             @include web992{
+    //                 color:black;
+    //             }
+    //           }
+    //         .checkbox-text{
+    //             font-size: 14px;
+    //             color: white;
+    //             font-weight: bold;
+    //             @include web992{
+    //                 color:black;
+    //             }
+    //         }
+    //         .checkbox{
+    //             margin-right: 8px;
+    //         }
+    //     }
+    //     .rwd-nav-sign{
+    //         margin-top: 20px;
+    //          @include pad768{
+    //             margin-top: 0;
+    //          }
+    //         button{
+    //             // background-color: rgb(137 137 137 / 50%);
+    //             border-radius: 20px;
+    //             border: 1px solid #79b4a0;
+    //             padding: 8px 21px;
+    //             background-color: transparent;
+    //             color: antiquewhite;
+    //             font-size: 16px;
+    //             @include web992{
+    //                 font-size: 8px;
+    //             }
+    //             // @include mobile391{
+    //             //     color:black;
+    //             // }
+    //             &:hover{
+    //                 background: linear-gradient(to bottom left, #487081, #83c1a6);
+    //              }
+    //         }
+    //         display: flex;
+    //         justify-content: space-around;
+    //         @include sign-rwd-1200{
+    //             display: none;
+    //         }
+    //     }
+        
+    //         h2{
+    //             font-size: 40px;
+    //             text-align: center;
+    //             margin-bottom: 40px;
+    //             font-weight: bold;
+    //             color:white;
+
+    //             @include web992{
+    //                 font-size: 30px;
+    //                 color:black;
+    //             }
+    //             @include pad768{
+    //                 font-size: 25px;
+    //             }
+    //         }
+    //         input{
+    //             padding:10px;
+    //             margin-bottom: 20px;
+    //             border-radius: 20px;
+    //             border: 1px solid white;
+    //             text-align: center;
+    //             // background-color: rgb(238 228 255);
+    //             background-color: transparent;
+    //             font-size: 18px;
+    //             @include w1200{
+    //                 // padding: 0;
+    //             }
+    //             @include web992{
+    //                 margin-bottom: 14px;
+    //                 border: 1px solid #79b4a0;
+    //                 padding: 5px 0;
+    //             }
+    //             @include pad768{
+ 
+    //                 margin-bottom: 0;
+    //                 font-size: 18px;
+    //             }
+    //         }
+    //         .login{
+    //             background-color: rgb(137 137 137 / 50%);
+    //             width: 219px;
+    //             // background: linear-gradient(to bottom left, #e3c24b, #83bbc1);
+    //             // background: #ebcc74;
+    //             // background-color: transparent;
+    //             background-color: rgb(238 228 255);
+    //             cursor: pointer;
+    //             font-weight: bold;
+    //             color:black;
+    //             border: 1px solid white;
+    //             @include web992{
+    //                 width: 199px;
+    //                 padding: 3px 0;
+    //                 background: linear-gradient(to bottom left, #d3f2ff, #83c1a6);
+    //                 border: 1px solid #79b4a0;
+    //             }
+    //             @include pad768{
+    //                 // width: 133px;
+    //             }
+    //             &:hover{
+    //                 background:rgb(184 152 237);
+    //                 color:black;
+    //             }
+    //         }
+    //     }
+        .dropdown-menu{
+            background: rgb(235 237 255);
+            }
+            .link-c:hover{
+                background: rgb(180, 186, 245);
+                color:white;
+            }
+        }
+    
+
+
+

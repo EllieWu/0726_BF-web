@@ -1,6 +1,6 @@
 
     .banner{
-        background-image: url("https://img.freepik.com/free-vector/futuristic-networking-technology-background-vector-purple-tone_53876-110876.jpg?w=1380&t=st=1658982118~exp=1658982718~hmac=028dd823d9df2f5764945973336df77fdd76178a43360aab4135ae8740e0b2da");
+        background-image: url("https://img3.goodfon.com/wallpaper/nbig/f/cd/tkan-sborki-linii-kraski-fon.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         height: 100vh;
@@ -19,7 +19,7 @@
         } 
         .add-box{
             width: 45%;
-            background-color: RGB(70, 61, 119);
+            background-color: RGB(70, 61, 119,0.75);
             margin: 0 auto;
             padding: 25px;
             border-radius: 8px;
@@ -59,7 +59,13 @@
             background-color: transparent;
             border: 1px solid white;
             color: white;
+            font-weight: bold;
+
                 
+        }
+        .disabled{
+            background-color: #f9f9f961;
+            color:black;
         }
         input::placeholder{
             color:white;
@@ -67,6 +73,10 @@
         textarea::placeholder{
             color:white;
         }
+        // input:disabled, textarea:disabled{
+        //     opacity:1;
+        //     -webkit-text-fill-color:#fd1212;
+        // }
         input[type="date"]::-webkit-calendar-picker-indicator {
             // color: rgba(0, 0, 0, 0);
             // opacity: 1;
@@ -94,6 +104,7 @@
             background-color: transparent;
             border: 1px solid white;
             color: white;
+            font-weight: bold;
         }
         
         .addStart-box{
@@ -135,10 +146,14 @@
             border: 0px;
             border-radius: 8px;
             &:hover{
-                background: #322a64;
+                background: #5b519fe3;
+                a{
+                    color:wheat;
+                    font-weight: bold;
+                }
             }
             a{
-                color: white;
+                color: #322a64;
                 text-decoration: none;
                 font-weight: bold;
             }

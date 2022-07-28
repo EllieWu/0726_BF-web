@@ -82,7 +82,7 @@ textarea {
 }
 
 .banner {
-  background-image: url("https://img.freepik.com/free-vector/futuristic-networking-technology-background-vector-purple-tone_53876-110876.jpg?w=1380&t=st=1658982118~exp=1658982718~hmac=028dd823d9df2f5764945973336df77fdd76178a43360aab4135ae8740e0b2da");
+  background-image: url("https://img3.goodfon.com/wallpaper/nbig/f/cd/tkan-sborki-linii-kraski-fon.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -102,7 +102,7 @@ textarea {
 }
 .banner .add-box {
   width: 45%;
-  background-color: RGB(70, 61, 119);
+  background-color: RGB(70, 61, 119, 0.75);
   margin: 0 auto;
   padding: 25px;
   border-radius: 8px;
@@ -140,6 +140,12 @@ input {
   background-color: transparent;
   border: 1px solid white;
   color: white;
+  font-weight: bold;
+}
+
+.disabled {
+  background-color: rgba(249, 249, 249, 0.3803921569);
+  color: black;
 }
 
 input::-moz-placeholder {
@@ -189,6 +195,7 @@ textarea {
   background-color: transparent;
   border: 1px solid white;
   color: white;
+  font-weight: bold;
 }
 
 .addStart-box {
@@ -235,10 +242,14 @@ textarea {
   border-radius: 8px;
 }
 .confirm-button-box button:hover {
-  background: #322a64;
+  background: rgba(91, 81, 159, 0.8901960784);
+}
+.confirm-button-box button:hover a {
+  color: wheat;
+  font-weight: bold;
 }
 .confirm-button-box button a {
-  color: white;
+  color: #322a64;
   text-decoration: none;
   font-weight: bold;
 }
@@ -305,7 +316,7 @@ textarea {
     width: 100%;
     margin-bottom: 8px;
   }
-  .add-title input {
+  input {
     width: 100%;
   }
   .add-content {

@@ -1,298 +1,153 @@
-@mixin w1200{
-    @media (max-width:1200px){
-        @content;
-    }
-}
-@mixin web992{
-    @media (max-width:992px){
-        @content;
-    }
-}
-// @mixin web992-2{
-//     @media (min-width:992px){
-//         @content;
-//     }
-// }
-@mixin pad768{
-    @media(max-width:768px){
-        @content;
-    }
-}
-@mixin mobile375{
-    @media(max-width: 375px){
-        @content;
-    }
-}
-// @mixin mobile391{
-//     @media(max-width: 391px){
-//         @content;
-//     }
-// }
-// @mixin m391{
-//     @media(min-width: 391px){
-//         @content;
-//     }
-// }
 
-// @mixin sign-rwd-1200{
-//     @media(min-width: 1200px){
-//         @content;
-//     }
-// }
-body{
-    // background-image: url("https://digitallearning.arizona.edu/sites/default/files/styles/uaqs_full_width_lg/public/RethinkingYourAssessments.jpg?itok=fYZ_ZKRP&timestamp=1599151705");
-    // background-size: cover;
-    // background-repeat: no-repeat;
-    // background-color: rgba(0, 0, 0, 0.4);
-    // background-position: center center;
-    // background-blend-mode: multiply;
-    // height: 100vh;
-    .container{
-        max-width: 1200px;
-        margin: 0 auto;
-        .nav-img{
-            width: 180px;
-            // @include mobile391{
-            //     width: 114px;
-            // }
-        }
-        .link-c {
-            color:black !important;
-            font-weight: bold !important;
-        }
-        
-    }
-    .menu-logout{
-        @include w1200{
-            display: none;
-        }
-    }
     .banner{
-        background-image: url("https://digitallearning.arizona.edu/sites/default/files/styles/uaqs_full_width_lg/public/RethinkingYourAssessments.jpg?itok=fYZ_ZKRP&timestamp=1599151705");
+        background-image: url("https://img.freepik.com/free-vector/futuristic-networking-technology-background-vector-purple-tone_53876-110876.jpg?w=1380&t=st=1658982118~exp=1658982718~hmac=028dd823d9df2f5764945973336df77fdd76178a43360aab4135ae8740e0b2da");
         background-size: cover;
         background-repeat: no-repeat;
         height: 100vh;
+        color:$color;
+        .add-h1{
+            margin-bottom: 20px;
+            padding-top: 100px;
+          h1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            font-weight: bold;
+            color: wheat;
+        }  
+        } 
+        .add-box{
+            width: 45%;
+            background-color: RGB(70, 61, 119);
+            margin: 0 auto;
+            padding: 25px;
+            border-radius: 8px;
+            h1{
+                font-size: 30px;
+                font-weight: bold;
+                margin-bottom: 20px;
+                text-align: center;
+            }
         }
-        @include web992{
-            background-image: url("https://cdni.iconscout.com/illustration/premium/thumb/ai-development-3454695-2918404.png");
-            background-color: #ccd1f6;
-
+        .add-content-box{
+            width: 100%;
+            padding-bottom: 14px;
+            border-bottom: 1px solid white;
         }
-        // .banner-img img{
-            // background-image: url("https://digitallearning.arizona.edu/sites/default/files/styles/uaqs_full_width_lg/public/RethinkingYourAssessments.jpg?itok=fYZ_ZKRP&timestamp=1599151705");
-        //     position: relative;
-        //     background-size: cover;
-        //     height: 100%;
-        //     background-attachment: fixed;
-        //     max-width: 100%;
-        //     overflow: hidden;
-        //     @include mobile391{
-        //         display: none;
-        //     }
-        // }
-    //     .ef {
-    //         --bRadius: 10px;
-    //         .div{
-                
-    //             position: relative;
-    //             text-align: center;
-    //             font-size: 24px;
-    //             // border: 2px solid rgb(179, 191, 231);
-    //             border-radius: var(--bRadius);
-    //             transition: all .3s;
-    //             &::before, &::after {
-    //                 content: "";
-    //                 position: absolute;
-    //                 top: -10px;
-    //                 left: -10px;
-    //                 right: -10px;
-    //                 bottom: -10px;
-    //                 border: 2px solid rgb(255, 255, 255);
-    //                 transition: all .5s;
-    //                 border-radius: var(--bRadius);
-    //                 animation: clippath 5s infinite linear;
-    //             }
-    //             &::after {
-    //                 animation: clippath 5s infinite -2.5s linear;
-    //             }
-    //             @keyframes clippath {
-    //                 0%, 100% { clip-path: inset(0 0 98% 0); }
-    //                 25% { clip-path: inset(0 98% 0 0); }
-    //                 50% { clip-path: inset(98% 0 0 0); }
-    //                 75% { clip-path: inset(0 0 0 98%); }
-    //             }
-        
-    //         }
-    //     }
-    // }
-    // .body-login-box{
-    //     display: flex;
-    //         @include w1200{
-    //         justify-content: center;
-    //     }
-    //      .body-login{
-    //         background-color:rgb(137 137 137 / 50%) ;
-    //         border-radius: 10px;
-    //         text-align: center;
-    //         padding: 28px 0;
-    //         width: 1200px;
-    //         margin-top: 134px;
+        .add-title{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 14px;
+        }
+        .add-content{
+            display: flex;
+            justify-content: space-between;
+        }
+        }
+        // .add-box{
             
-    //         @include w1200{
-    //             width: 960px;
-    //             padding: 100px 0px;
-    //         } 
-    //         @include web992{
-    //             padding: 90px 0px;
-    //             width: 768px;
-    //             background-color:rgb(255 255 255 / 95%) ;
-    //         }
-    //         @include pad768{
-    //             width: 320px;  
-    //         }
-    //         @include mobile375{
-    //             width: 266px;
-    //         }
-    //         // @include mobile391{
-                
-    //         //     width: 200px;
-                
-    //         // }
-    //         p{
-    //             @include web992{
-    //                 font-size: 16px;
-    //             }
-    //             // @include pad768{
-    //             //     font-size: 12px;
-    //             // }
-    //         }
-    //         a{
-    //             @include web992{
-    //                 width: 177px;
-    //             }
-    //         }
-    //         ::placeholder {
-    //             // color: black;
-    //             color:white;
-    //             font-weight: bold;
-    //             @include web992{
-    //                 color:black;
-    //             }
-    //           }
-    //         .checkbox-text{
-    //             font-size: 14px;
-    //             color: white;
-    //             font-weight: bold;
-    //             @include web992{
-    //                 color:black;
-    //             }
-    //         }
-    //         .checkbox{
-    //             margin-right: 8px;
-    //         }
-    //     }
-    //     .rwd-nav-sign{
-    //         margin-top: 20px;
-    //          @include pad768{
-    //             margin-top: 0;
-    //          }
-    //         button{
-    //             // background-color: rgb(137 137 137 / 50%);
-    //             border-radius: 20px;
-    //             border: 1px solid #79b4a0;
-    //             padding: 8px 21px;
-    //             background-color: transparent;
-    //             color: antiquewhite;
-    //             font-size: 16px;
-    //             @include web992{
-    //                 font-size: 8px;
-    //             }
-    //             // @include mobile391{
-    //             //     color:black;
-    //             // }
-    //             &:hover{
-    //                 background: linear-gradient(to bottom left, #487081, #83c1a6);
-    //              }
-    //         }
-    //         display: flex;
-    //         justify-content: space-around;
-    //         @include sign-rwd-1200{
-    //             display: none;
-    //         }
-    //     }
-        
-    //         h2{
-    //             font-size: 40px;
-    //             text-align: center;
-    //             margin-bottom: 40px;
-    //             font-weight: bold;
-    //             color:white;
-
-    //             @include web992{
-    //                 font-size: 30px;
-    //                 color:black;
-    //             }
-    //             @include pad768{
-    //                 font-size: 25px;
-    //             }
-    //         }
-    //         input{
-    //             padding:10px;
-    //             margin-bottom: 20px;
-    //             border-radius: 20px;
-    //             border: 1px solid white;
-    //             text-align: center;
-    //             // background-color: rgb(238 228 255);
-    //             background-color: transparent;
-    //             font-size: 18px;
-    //             @include w1200{
-    //                 // padding: 0;
-    //             }
-    //             @include web992{
-    //                 margin-bottom: 14px;
-    //                 border: 1px solid #79b4a0;
-    //                 padding: 5px 0;
-    //             }
-    //             @include pad768{
- 
-    //                 margin-bottom: 0;
-    //                 font-size: 18px;
-    //             }
-    //         }
-    //         .login{
-    //             background-color: rgb(137 137 137 / 50%);
-    //             width: 219px;
-    //             // background: linear-gradient(to bottom left, #e3c24b, #83bbc1);
-    //             // background: #ebcc74;
-    //             // background-color: transparent;
-    //             background-color: rgb(238 228 255);
-    //             cursor: pointer;
-    //             font-weight: bold;
-    //             color:black;
-    //             border: 1px solid white;
-    //             @include web992{
-    //                 width: 199px;
-    //                 padding: 3px 0;
-    //                 background: linear-gradient(to bottom left, #d3f2ff, #83c1a6);
-    //                 border: 1px solid #79b4a0;
-    //             }
-    //             @include pad768{
-    //                 // width: 133px;
-    //             }
-    //             &:hover{
-    //                 background:rgb(184 152 237);
-    //                 color:black;
-    //             }
-    //         }
-    //     }
-        .dropdown-menu{
-            background: rgb(235 237 255);
-            }
-            .link-c:hover{
-                background: rgb(180, 186, 245);
-                color:white;
-            }
+        // }
+        h2{
+            font-size: 18px;
+            font-weight: bold;
         }
+        input{
+            width: 80%;
+            padding: 10px;
+            background-color: transparent;
+            border: 1px solid white;
+            color: white;
+                
+        }
+        input::placeholder{
+            color:white;
+        } 
+        textarea::placeholder{
+            color:white;
+        }
+        input[type="date"]::-webkit-calendar-picker-indicator {
+            // color: rgba(0, 0, 0, 0);
+            // opacity: 1;
+            display: block;
+            background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Calendar_Icon_White.svg/429px-Calendar_Icon_White.svg.png) no-repeat;
+            width: 22px;
+            height: 22px;
+            // border-width: thin;
+            background-size: cover;
+        }
+        input[type="time"]::-webkit-calendar-picker-indicator {
+            // color: rgba(0, 0, 0, 0);
+            // opacity: 1;
+            display: block;
+            background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Clock_simple_white.svg/1200px-Clock_simple_white.svg.png) no-repeat;
+            width: 20px;
+            height: 20px;
+            // border-width: thin;
+            background-size: cover;
+        }
+        textarea{
+            width: 80%;
+            padding: 10px;
+            height: 100px;
+            background-color: transparent;
+            border: 1px solid white;
+            color: white;
+        }
+        
+        .addStart-box{
+            display: flex;
+            margin-top: 14px;
+            justify-content: space-between;
+            padding-bottom: 14px;
+            border-bottom: 1px solid $color;
+            .addStart{
+                display: flex;
+                width: 80%;
+                justify-content: space-between;
+                &-item{
+                    width: 40%;
+                }
+            }
+
+        }
+
+        .time-input{
+            height: 40px;
+            width: 100%;
+        }
+        .fontStyle{
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .add-stop{
+            margin: 14px 0;
+        }
+        .checkbox{
+            width: 85px;
+        }
+        .confirm-button-box{
+            text-align: center;
+           button{
+            background-color: #9891bf;
+            padding: 10px 15px;
+            border: 0px;
+            border-radius: 8px;
+            &:hover{
+                background: #322a64;
+            }
+            a{
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+            }
+        } 
+        }
+        
+        
+       
+    
     
 
 

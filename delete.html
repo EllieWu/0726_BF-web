@@ -78,17 +78,25 @@
     </div>
     <div class="banner">
       <div class="add-h1">
-        <h1>公告新增</h1>
+        <h1>公告刪除</h1>
+      </div>
+      <div class="delete-action">
+        <p>注意!動作將刪除此檔案</p>
       </div>
         <form class="add-box">
+            
           <div class="add-content-box">
             <div class="add-title">
+                <h2>公告編號</h2>
+                <input  type="text" name="addTitle" id="addTitle" value="01" disabled>
+            </div>
+            <div class="add-title">
                 <h2>公告主旨</h2>
-                <input  type="text" name="addTitle" id="addTitle" placeholder="請輸入10字以內主旨">
+                <input  type="text" name="addTitle" id="addTitle" value="大樓清理" disabled >
             </div>
             <div class="add-content">
                 <h2>公告內容</h2>
-                <textarea   name="" id="" cols="30" rows="10" placeholder="請輸入100字以內主旨"></textarea>
+                <textarea name="" id="" cols="30" rows="10" value="" disabled>7/14整棟大樓消毒</textarea>
             </div>
           </div>
           <div class="addTime">
@@ -97,11 +105,11 @@
               <div class="addStart">
                 <div class="addStart-item">
                   <p class="fontStyle">日期</p>
-                  <input class="time-input" type="date" name="date" id="date">
+                  <input class="time-input" type="date" name="date" id="date" value="2022-07-07" disabled>
                 </div>
                 <div class="addStart-item">
                   <p class="fontStyle">時間</p>
-                  <input class="time-input" type="time" name="" id="">
+                  <input class="time-input" type="time" name="" id="" value="08:00" disabled>
                 </div>
                 <p class="fontStyle">至</p>
               </div>
@@ -111,23 +119,23 @@
               <div class="addStart">
                 <div class="addStart-item">
                   <p class="fontStyle">日期</p>
-                  <input class="time-input" type="date" name="date" id="date">
+                  <input class="time-input" type="date" name="date" id="date" value="2022-07-15" disabled>
                 </div>
                 <div class="addStart-item">
                   <p class="fontStyle">時間</p>
-                  <input class="time-input" type="time" name="" id="">
+                  <input class="time-input" type="time" name="time" id="time" value="17:00" disabled>
                 </div>
                 <p class="fontStyle">止</p>
               </div>
             </div>
             <div class="add-stop">
               <label for="stopPush"><h2>停用公告</h2></label>
-              <input class="checkbox" type="checkbox" name="" id="stopPush">
+              <input class="checkbox" type="checkbox" name="stopPush" id="stopPush">
             </div>
           </div>
           <div class="confirm-button-box">
-            <button type="submit"><a href="#">新增公告</a></button>
-            <button><a href="index.html">取消返回</a></button>
+            <button type="submit"><a href="#">刪除公告</a></button>
+            <button><a href="index.html">取消刪除</a></button>
           </div>
         </form>
   </div>

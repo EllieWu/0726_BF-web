@@ -1,0 +1,138 @@
+@mixin w1200{
+    @media (max-width:1200px){
+        @content;
+    }
+}
+@mixin web992{
+    @media (max-width:992px){
+        @content;
+    }
+}
+// @mixin web992-2{
+//     @media (min-width:992px){
+//         @content;
+//     }
+// }
+@mixin pad768{
+    @media(max-width:768px){
+        @content;
+    }
+}
+@mixin mobile375{
+    @media(max-width: 375px){
+        @content;
+    }
+}
+
+@include w1200{
+    .banner{
+        .add-box{
+            padding: 10px 20px;
+        }
+        .add-h1{
+            padding-top: 22px;
+        }
+    }
+    .menu-logout{
+        display: none;
+    }
+}
+
+@include web992{
+    .banner{
+        background-image: url("https://cdni.iconscout.com/illustration/premium/thumb/ai-development-3454695-2918404.png");
+        background-color: #ccd1f6;
+        height: 100vh;
+        .add-box{
+            padding: 25px 20px;
+            background-color: RGB(70, 61, 119,0.8);
+        }
+        .add-h1 h1{
+            color:RGB(70, 61, 119);
+        }
+    }
+    textarea{
+        width: 75%;
+    }
+    input{
+        width: 75%;
+    }
+    .time-input{
+        width: 100%;
+    }
+    .addStart-box{
+        .addStart{
+            width: 75%;
+        }
+    }
+    input[type="date"]::-webkit-calendar-picker-indicator {
+        width: 15px;
+        height: 15px;
+
+    }
+}
+
+@include pad768{
+    h2{
+        font-size: 14px;
+    }
+    .banner{
+        .add-h1{
+            padding-top: 14px;
+            margin-bottom: 14px;
+            h1{
+                font-size: 24px;
+            }
+        }
+        .add-box{
+            width: 65%;
+        }
+    }
+    .add-title{
+        flex-wrap: wrap;
+        h2{
+            width: 100%;
+            margin-bottom: 8px;
+            
+        }
+        input{
+            width: 100%;
+        }
+    }
+    .add-content{
+        flex-wrap: wrap;
+        h2{
+            width: 100%;
+            margin-bottom: 8px;
+        }
+        textarea{
+            width: 100%;
+        }
+    }
+    .addStart-box{
+        flex-wrap: wrap;
+        padding-bottom: 0;
+        .addStart{
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        .addStart-item{
+            width: 100%;
+        }
+        .fontStyle{
+            margin-top: 14px;
+            font-size: 12px;
+        }
+    }
+    // .add-stop{
+    //     margin: 14px 0 0 0;
+    // }
+    input[type="date"]::-webkit-calendar-picker-indicator {
+        width: 22px;
+        height: 22px;
+
+    }
+    textarea{
+        height: 70px;
+    }
+}

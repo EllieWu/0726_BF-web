@@ -56,38 +56,300 @@ img {
   vertical-align: middle;
 }
 
-body .container {
+textarea {
+  resize: none;
+}
+
+.container {
   max-width: 1200px;
   margin: 0 auto;
 }
-body .container .nav-img {
+.container .nav-img {
   width: 180px;
 }
-body .container .link-c {
+.container .nav-img .link-c {
   color: black !important;
   font-weight: bold !important;
 }
-@media (max-width: 1200px) {
-  body .menu-logout {
-    display: none;
-  }
+
+.dropdown-menu {
+  background: rgb(235, 237, 255);
 }
-body .banner {
-  background-image: url("https://digitallearning.arizona.edu/sites/default/files/styles/uaqs_full_width_lg/public/RethinkingYourAssessments.jpg?itok=fYZ_ZKRP&timestamp=1599151705");
+
+.link-c:hover {
+  background: rgb(180, 186, 245);
+  color: white;
+}
+
+.banner {
+  background-image: url("https://img.freepik.com/free-vector/futuristic-networking-technology-background-vector-purple-tone_53876-110876.jpg?w=1380&t=st=1658982118~exp=1658982718~hmac=028dd823d9df2f5764945973336df77fdd76178a43360aab4135ae8740e0b2da");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
+  color: white;
 }
-@media (max-width: 992px) {
-  body {
-    background-image: url("https://cdni.iconscout.com/illustration/premium/thumb/ai-development-3454695-2918404.png");
-    background-color: #ccd1f6;
+.banner .add-h1 {
+  margin-bottom: 20px;
+  padding-top: 100px;
+}
+.banner .add-h1 h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: wheat;
+}
+.banner .add-box {
+  width: 45%;
+  background-color: RGB(70, 61, 119);
+  margin: 0 auto;
+  padding: 25px;
+  border-radius: 8px;
+}
+.banner .add-box h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.banner .add-content-box {
+  width: 100%;
+  padding-bottom: 14px;
+  border-bottom: 1px solid white;
+}
+.banner .add-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+.banner .add-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+input {
+  width: 80%;
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+input::-moz-placeholder {
+  color: white;
+}
+
+input:-ms-input-placeholder {
+  color: white;
+}
+
+input::placeholder {
+  color: white;
+}
+
+textarea::-moz-placeholder {
+  color: white;
+}
+
+textarea:-ms-input-placeholder {
+  color: white;
+}
+
+textarea::placeholder {
+  color: white;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+  display: block;
+  background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Calendar_Icon_White.svg/429px-Calendar_Icon_White.svg.png) no-repeat;
+  width: 22px;
+  height: 22px;
+  background-size: cover;
+}
+
+input[type=time]::-webkit-calendar-picker-indicator {
+  display: block;
+  background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Clock_simple_white.svg/1200px-Clock_simple_white.svg.png) no-repeat;
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+}
+
+textarea {
+  width: 80%;
+  padding: 10px;
+  height: 100px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.addStart-box {
+  display: flex;
+  margin-top: 14px;
+  justify-content: space-between;
+  padding-bottom: 14px;
+  border-bottom: 1px solid white;
+}
+.addStart-box .addStart {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+.addStart-box .addStart-item {
+  width: 40%;
+}
+
+.time-input {
+  height: 40px;
+  width: 100%;
+}
+
+.fontStyle {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.add-stop {
+  margin: 14px 0;
+}
+
+.checkbox {
+  width: 85px;
+}
+
+.confirm-button-box {
+  text-align: center;
+}
+.confirm-button-box button {
+  background-color: #9891bf;
+  padding: 10px 15px;
+  border: 0px;
+  border-radius: 8px;
+}
+.confirm-button-box button:hover {
+  background: #322a64;
+}
+.confirm-button-box button a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+  .banner .add-box {
+    padding: 10px 20px;
+  }
+  .banner .add-h1 {
+    padding-top: 22px;
+  }
+  .menu-logout {
+    display: none;
   }
 }
-body .dropdown-menu {
-  background: rgb(235, 237, 255);
+@media (max-width: 992px) {
+  .banner {
+    background-image: url("https://cdni.iconscout.com/illustration/premium/thumb/ai-development-3454695-2918404.png");
+    background-color: #ccd1f6;
+    height: 100vh;
+  }
+  .banner .add-box {
+    padding: 25px 20px;
+    background-color: RGB(70, 61, 119, 0.8);
+  }
+  .banner .add-h1 h1 {
+    color: RGB(70, 61, 119);
+  }
+  textarea {
+    width: 75%;
+  }
+  input {
+    width: 75%;
+  }
+  .time-input {
+    width: 100%;
+  }
+  .addStart-box .addStart {
+    width: 75%;
+  }
+  input[type=date]::-webkit-calendar-picker-indicator {
+    width: 15px;
+    height: 15px;
+  }
 }
-body .link-c:hover {
-  background: rgb(180, 186, 245);
+@media (max-width: 768px) {
+  h2 {
+    font-size: 14px;
+  }
+  .banner .add-h1 {
+    padding-top: 14px;
+    margin-bottom: 14px;
+  }
+  .banner .add-h1 h1 {
+    font-size: 24px;
+  }
+  .banner .add-box {
+    width: 65%;
+  }
+  .add-title {
+    flex-wrap: wrap;
+  }
+  .add-title h2 {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  .add-title input {
+    width: 100%;
+  }
+  .add-content {
+    flex-wrap: wrap;
+  }
+  .add-content h2 {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  .add-content textarea {
+    width: 100%;
+  }
+  .addStart-box {
+    flex-wrap: wrap;
+    padding-bottom: 0;
+  }
+  .addStart-box .addStart {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .addStart-box .addStart-item {
+    width: 100%;
+  }
+  .addStart-box .fontStyle {
+    margin-top: 14px;
+    font-size: 12px;
+  }
+  input[type=date]::-webkit-calendar-picker-indicator {
+    width: 22px;
+    height: 22px;
+  }
+  textarea {
+    height: 70px;
+  }
+}
+.delete-action {
+  text-align: center;
+  background-color: #991303;
+  width: 45%;
+  /* display: flex; */
+  /* justify-content: center; */
+  margin: 0 auto;
+  padding: 20px 0px;
+  margin-bottom: 14px;
   color: white;
+  font-weight: bold;
 }/*# sourceMappingURL=all.css.map */
